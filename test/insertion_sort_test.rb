@@ -31,5 +31,16 @@ class InsertionTest < Minitest::Test
     sorted_array = sorter.insertion_sort([1,-44,55,-15034256])
     assert_equal [-15034256, -44, 1, 55], sorted_array
   end
+  def test_odd_number_of_letters
+    sorter = InsertionSort.new
+    sorted_array = sorter.insertion_sort(["a","z","c","f","d","r","q"])
+    assert_equal ["a", "c", "d", "f", "q", "r", "z"], sorted_array
+  end
+  # def test_over_9000_numbers_reversed
+  #   skip
+  #   sorter = InsertionSort.new
+  #   sorted_array = sorter.insertion_sort([*1..9001].reverse)
+  #   assert_equal [*1..9001], sorted_array
+  # end
 
 end
