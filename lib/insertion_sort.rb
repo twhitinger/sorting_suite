@@ -15,14 +15,3 @@ class InsertionSort
       array
   end
 end
-
-
-# sorter = InsertionSort.new
-#
-# puts "Original Array :"
-# original_array=[2,19,5,4,3,14,2]
-# p original_array
-# puts "Sorted Array Using Insertion Sort:"
-# array = sorter.insertion_sort(original_array)
-# p array
-# p original_array
